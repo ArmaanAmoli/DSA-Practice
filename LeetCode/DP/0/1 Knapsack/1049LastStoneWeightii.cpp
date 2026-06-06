@@ -16,7 +16,7 @@ int lastStoneWeightII(vector<int>& stones) {
     }
     target = ceil(total_sum/2);
     dp.assign(stones.size() , vector<int>(total_sum+1 , -1));
-
+    return solve(0 , 0 , stones);
 }
 
 int main(){
