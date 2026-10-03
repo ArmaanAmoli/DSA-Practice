@@ -91,6 +91,8 @@ int maxNoOfAdjPairsOf(vector<int> &nums)
                 startIndex = i;
                 // cout << "replace: " << replacer << "being replced: " << beingReplaced << endl;
                 currentAdj++;
+                maxAdj = max(maxAdj, currentAdj);
+
             }
             else
             {
